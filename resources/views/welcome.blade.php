@@ -15,8 +15,16 @@
         </style>
     </head>
     <body>
-        <p>These are the books 
-            <li>{{ $product1 }}</li>
+        <p>
+            These are the books 
+            <ul>
+            <?php
+                echo "<li>" . $products['product1'] . "</li>";
+                echo "<li>" . $products['product2'] . "</li>";
+                echo "<li>" . $products['product3'] . "</li>";
+                echo "<li>" . $products['product4'] . "</li>";
+            ?> 
+            </ul> 
         </p>
     </body>
 </html>

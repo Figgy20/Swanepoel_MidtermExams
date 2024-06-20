@@ -1,12 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\ProductController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
+    echo "chat is this real";
     return view('welcome');
 });
 
 
  
-Route::get('/products', [ProductController::class, 'getProducts']);
+Route::get('/', [ProductController::class, 'getProducts']);
