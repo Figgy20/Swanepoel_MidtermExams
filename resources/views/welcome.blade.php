@@ -15,6 +15,8 @@
         </style>
     </head>
     <body>
-        
+        <p>These are the books 
+            <li>{{ $product1 }}</li>
+        </p>
     </body>
 </html>

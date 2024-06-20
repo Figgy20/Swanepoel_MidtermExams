@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class ProductController extends Controller
 {
@@ -15,6 +16,6 @@ class ProductController extends Controller
             'product4' => 'Hunger Games: Mockingjay'
         );
 
-        return view('user', ['products' => $products]);
+        return view('welcome', ['products' => $products]);
     }
 }
