@@ -16,6 +16,8 @@ class ProductController extends Controller
             'product4' => 'Hunger Games: Mockingjay'
         );
 
+
+
         return view('welcome', ['products' => $products]);
     }
 }
